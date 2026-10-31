@@ -1,0 +1,7 @@
+Dark GPT Welcome Dialog HOOK
+
+Package: com.galaxycrash.app
+File: smali/com/galaxycrash/app/MainActivity.smali -> onCreate(Landroid/os/Bundle;)V
+Paste this line right AFTER the invoke-super ...->onCreate(Landroid/os/Bundle;)V line:
+
+invoke-static {p0}, Lcom/darkgpt/welcome/WelcomeDialog;->show(Landroid/app/Activity;)V
